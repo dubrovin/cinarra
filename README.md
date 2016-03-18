@@ -1,5 +1,6 @@
 # cinarra
 Test task
+
 Need to implement http server without frontend, only backend. You can implement your own server or use libraris like Flask or Tornado except Django. Server should store information about books such as:
 
 Title (unique)
@@ -30,7 +31,9 @@ For testing server we will use CURL and Telnet utility. Server should be able to
 
 Links:
 HTTP error codes description: https://en.wikipedia.org/wiki/List_of_HTTP_status_codes
+
 Ubuntu CURl: http://askubuntu.com/questions/299870/http-post-and-get-using-curl-in-linux
+
 JSON: http://www.json.org/
 
 
