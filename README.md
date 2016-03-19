@@ -38,6 +38,8 @@ Ubuntu CURl: http://askubuntu.com/questions/299870/http-post-and-get-using-curl-
 JSON: http://www.json.org/
 
 # To get started:
+0)setup python 3.4.3
+
 1) clone repo
 
 2) setup bottle http://bottlepy.org/  (via pip from requirments.txt)
