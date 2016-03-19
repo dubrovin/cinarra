@@ -1,0 +1,46 @@
+# ab -n 100000 -u put.txt -T application/json http://127.0.0.1:8080/books > ab_put_100k.txt
+This is ApacheBench, Version 2.3 <$Revision: 1663405 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 127.0.0.1 (be patient)
+
+
+Server Software:        WSGIServer/0.2
+Server Hostname:        127.0.0.1
+Server Port:            8080
+
+Document Path:          /books
+Document Length:        74 bytes
+
+Concurrency Level:      1
+Time taken for tests:   237.764 seconds
+Complete requests:      100000
+Failed requests:        0
+Total transferred:      22000000 bytes
+Total body sent:        29900000
+HTML transferred:       7400000 bytes
+Requests per second:    420.58 [#/sec] (mean)
+Time per request:       2.378 [ms] (mean)
+Time per request:       2.378 [ms] (mean, across all concurrent requests)
+Transfer rate:          90.36 [Kbytes/sec] received
+                        122.81 kb/s sent
+                        213.17 kb/s total
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    1 105.7      0   19341
+Processing:     1    1   9.7      1     902
+Waiting:        1    1   4.9      1     756
+Total:          1    2 106.2      1   19343
+
+Percentage of the requests served within a certain time (ms)
+  50%      1
+  66%      1
+  75%      1
+  80%      1
+  90%      2
+  95%      2
+  98%      2
+  99%      3
+ 100%  19343 (longest request)

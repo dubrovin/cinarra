@@ -1,0 +1,8 @@
+{
+    "XBook-data":{
+        "author": "unknown",
+        "date_of_publication": "0001-11-22",
+        "page_count": "600",
+        "title": "testbook"
+    }
+}
