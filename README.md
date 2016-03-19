@@ -37,4 +37,29 @@ Ubuntu CURl: http://askubuntu.com/questions/299870/http-post-and-get-using-curl-
 
 JSON: http://www.json.org/
 
+# To get started:
+1) clone repo
 
+2) setup bottle http://bottlepy.org/  (via pip from requirments.txt)
+
+3) from folder app run server.py, after that we can use curl
+
+4) tests.py run from folder app
+
+# cURL examples
+POST: curl -H "Content-Type: application/json" -X POST -d '{"XBook-data":{"title":"xyz","author":"xyz"}}' http://localhost:8080/books
+
+PUT: curl -H "Content-Type: application/json" -X PUT -d '{"XBook-data":{"title":"xyz","author":"xyz"}}' http://localhost:8080/books
+
+GET: curl -H "Content-Type: application/json" -X GET http://localhost:8080/books/bible
+
+DELETE: curl -H "Content-Type: application/json" -X DELETE http://localhost:8080/books/bible
+
+# Apache benchmark examples
+To get 100000 GET requests
+ab -n 100000 -c 5  http://127.0.0.1:8080/books/bible > ab_get_test_100k.txt
+
+To get 100000 PUT requests(put.txt placed in folder test)
+ab -n 100000 -u put.txt -T application/json http://127.0.0.1:8080/books > ab_put_test_100k.txt
+
+Jmeter file(HTTP Request.jmx) placed into /test/reports 
