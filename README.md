@@ -62,4 +62,5 @@ ab -n 100000 -c 5  http://127.0.0.1:8080/books/bible > ab_get_test_100k.txt
 To get 100000 PUT requests(put.txt placed in folder test)
 ab -n 100000 -u put.txt -T application/json http://127.0.0.1:8080/books > ab_put_test_100k.txt
 
-Jmeter file(HTTP Request.jmx) placed into /test/reports 
+JMeter file(HTTP Request.jmx) placed into /test/reports 
+Data for JMeter(data.csv) app placed into folder test
