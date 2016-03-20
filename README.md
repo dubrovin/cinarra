@@ -42,7 +42,7 @@ JSON: http://www.json.org/
 
 1) clone repo
 
-2) setup bottle http://bottlepy.org/  (via pip from requirments.txt)
+2) pip install -r requirments.txt
 
 3) from folder app run server.py, after that we can use curl
 
